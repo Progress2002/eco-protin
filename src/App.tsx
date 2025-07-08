@@ -1,12 +1,25 @@
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
+import Layout from "./components/layout";
+import HomePage from "./pages";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [{ path: "/", element: <HomePage /> }],
+  },
+  {
+    path: "*",
+    element: <Navigate to="/" />,
+  },
+]);
+
 function App() {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <p className="text-lg">
-        This is a simple React app with Chakra UI and Tailwind CSS.
-      </p>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
