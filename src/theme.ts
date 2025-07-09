@@ -5,12 +5,12 @@ const customTheme = extendTheme({
     body: "Poppins, sans-serif",
     heading: "Poppins, sans-serif",
   },
-  colors: {
-    primary: {},
-    secondary: {},
-    success: {},
-    error: {},
-  },
+  // colors: {
+  //   primary: {},
+  //   secondary: {},
+  //   success: {},
+  //   error: {},
+  // },
 });
 
 export default customTheme;
