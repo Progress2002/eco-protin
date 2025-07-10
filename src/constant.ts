@@ -16,15 +16,19 @@ interface Route {
 export const ROUTES: Route[] = [
   {
     name: "Home",
-    path: "/",
+    path: "home",
   },
   {
     name: "Our Products",
-    path: "/products",
+    path: "products",
+  },
+  {
+    name: "Our Services",
+    path: "services",
   },
   {
     name: "About",
-    path: "/about",
+    path: "about",
   },
 ];
 

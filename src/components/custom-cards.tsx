@@ -13,12 +13,14 @@ export const ProductCard: React.FC<CardProps> = ({
   imageUrl,
 }) => {
   return (
-    <Box className="bg-white  rounded-[3rem]">
-      <img
+    <Box data-aos="fade-up" className="bg-white  rounded-[3rem]">
+      <Box className="overflow-hidden rounded-t-[3rem]">
+        <img
         src={imageUrl}
         alt={title}
-        className="w-full !h-fit object-cover rounded"
+        className="w-full !h-fit object-cover rounded-[3rem] hover:scale-105"
       />
+      </Box>
       <Box className="p-5 md:px-10 relative bottom-5">
         <Text as="h2" className="!text-2xl !font-semibold !mb-5 text-[#196432]">
           {title}
@@ -40,8 +42,10 @@ export const ServiceCard: React.FC<CardProps> = ({
 }) => {
   return (
     <Flex
+      data-aos="fade-up"
+      data-aos-delay="300"
       direction="column-reverse"
-      className="bg-white rounded-[2rem] !justify-between h-full w-full">
+      className="bg-white rounded-[2rem] !justify-between h-full w-full  hover:shadow-lg hover:scale-95">
       <Box className="!rounded-b-[2rem]">
         <img
           src={imageUrl}

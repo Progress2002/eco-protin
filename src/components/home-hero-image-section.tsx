@@ -8,7 +8,7 @@ import Logo from "../assets/images/logo.webp";
 
 export const ImageDisplay = () => {
   return (
-    <Flex align="baseline" gap={{ base: 2, md: 4 }} height="fit-content">
+    <Flex data-aos="fade-up" data-aos-delay="100" align="baseline" gap={{ base: 2, md: 4 }} height="fit-content">
       {/* Left images */}
       <Box
         display={{ base: "none", md: "block" }}

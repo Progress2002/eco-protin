@@ -1,11 +1,11 @@
 import { Button, Flex } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
 import { ROUTES } from "@/constant";
-import { NavLink } from "react-router-dom";
 import Container from "../ui/container";
 import Logo from "../../assets/images/logo.webp";
 import { IoMenu } from "react-icons/io5";
 import MobileDrawer from "./drawer";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -33,7 +33,7 @@ const Header = () => {
     active:
       "!text-[#0E6A10] font-semibold text-sm p-2 !border-b-2 !border-b-[#0E6A10] transition-colors",
     inactive:
-      "!text-gray-700 text-sm p-2 font-medium hover:!text-[#0E6A10] transition-colors",
+      "!text-gray-700 text-sm p-2 font-medium hover:cursor-pointer hover:!text-[#0E6A10] transition-colors",
   };
 
   return (
@@ -47,20 +47,24 @@ const Header = () => {
       />
       <Container className="h-full flex items-center w-full  !border-b-2  border-b-gray-200">
         <Flex justify="space-between" w="full" align="center">
-          <NavLink to="/" className="flex items-center">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="flex items-center">
             <img src={Logo} alt="Eco-protin Logo" className="!h-13 !w- mr-2" />
-          </NavLink>
+          </Link>
           <nav className="hidden md:block">
             <ul className="flex space-x-4">
               {ROUTES.map((route) => (
                 <li key={route.path} className="p-3">
-                  <NavLink
+                  <Link
                     to={route.path}
-                    className={({ isActive }) =>
-                      isActive ? linkStyles.active : linkStyles.inactive
-                    }>
+                    smooth={true}
+                    duration={500}
+                    className={linkStyles.inactive}>
                     {route.name}
-                  </NavLink>
+                  </Link>
                 </li>
               ))}
             </ul>

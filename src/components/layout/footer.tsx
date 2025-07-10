@@ -34,7 +34,7 @@ const Footer = () => {
 
   return (
     <Container>
-      <footer className="!bg-[#D0EAC7]  p-10 rounded-3xl my-10">
+      <footer data-aos="fade-up" className="!bg-[#D0EAC7]  p-10 rounded-3xl my-10">
         <NavLink to="/" className="flex items-center">
           <img src={Logo} alt="Eco-protin Logo" className="!h-13 !w- mr-2" />
         </NavLink>
@@ -106,6 +106,7 @@ const Footer = () => {
             ))}
           </Flex>
         </Flex>
+        <Text className="text-center text-sm text-gray-600">Website Design: <strong>LbH</strong></Text>
       </footer>
     </Container>
   );

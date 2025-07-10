@@ -5,6 +5,9 @@ import {
 } from "react-router-dom";
 import Layout from "./components/layout";
 import HomePage from "./pages";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+      offset: 0,
+    });
+  }, []);
   return <RouterProvider router={router} />;
 }
 

@@ -7,7 +7,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { ROUTES } from "@/constant";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 interface DrawerProps {
   isOpen: boolean;
@@ -32,14 +32,14 @@ const MobileDrawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
               <ul className="space-y-2 -mr-10">
                 {ROUTES.map((route) => (
                   <li key={route.path} className="p-3">
-                    <NavLink
+                    <Link
                       to={route.path}
                       onClick={onClose}
-                      className={({ isActive }) =>
-                        isActive ? linkStyles.active : linkStyles.inactive
-                      }>
+                      smooth={true}
+                      duration={500}
+                      className={linkStyles.inactive}>
                       {route.name}
-                    </NavLink>
+                    </Link>
                   </li>
                 ))}
               </ul>
