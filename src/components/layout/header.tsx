@@ -52,7 +52,11 @@ const Header = () => {
             smooth={true}
             duration={500}
             className="flex items-center">
-            <img src={Logo} alt="Eco-protin Logo" className="!h-13 !w- mr-2" />
+            <img
+              src={Logo}
+              alt="Eco-protin Logo"
+              className="!h-13 !w- mr-2 cursor-pointer"
+            />
           </Link>
           <nav className="hidden md:block">
             <ul className="flex space-x-4">
@@ -61,7 +65,7 @@ const Header = () => {
                   <Link
                     to={route.path}
                     smooth={true}
-                    duration={500}
+                    duration={1000}
                     className={linkStyles.inactive}>
                     {route.name}
                   </Link>

@@ -13,7 +13,7 @@ import BlogImg from "../assets/images/Blog.webp";
 import SDGBadge1 from "../assets/images/SDG Badge-1.webp";
 import SDGBadge2 from "../assets/images/SDG Badge-2.webp";
 import SDGBadge3 from "../assets/images/SDG Badge-13.webp";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 
 const HomePage = () => {
   return (
@@ -46,7 +46,9 @@ const HomePage = () => {
               style={{
                 boxShadow: "0 10px 20px #0A5914",
               }}>
-              Discover Our Products
+              <Link to="products" smooth={true} duration={1000}>
+                Discover Our Products
+              </Link>
             </Button>
 
             {/* Image display */}

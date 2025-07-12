@@ -36,7 +36,7 @@ const MobileDrawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
                       to={route.path}
                       onClick={onClose}
                       smooth={true}
-                      duration={500}
+                      duration={1000}
                       className={linkStyles.inactive}>
                       {route.name}
                     </Link>

@@ -1,11 +1,11 @@
 import Container from "../ui/container";
 import Logo from "../../assets/images/logo.webp";
-import { NavLink } from "react-router-dom";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { MdOutlineFacebook } from "react-icons/md";
 import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import type { JSX } from "react";
+import { Link } from "react-scroll";
 
 interface Socials {
   icon: JSX.Element;
@@ -34,10 +34,20 @@ const Footer = () => {
 
   return (
     <Container>
-      <footer data-aos="fade-up" className="!bg-[#D0EAC7]  p-10 rounded-3xl my-10">
-        <NavLink to="/" className="flex items-center">
-          <img src={Logo} alt="Eco-protin Logo" className="!h-13 !w- mr-2" />
-        </NavLink>
+      <footer
+        data-aos="fade-up"
+        className="!bg-[#D0EAC7]  p-10 rounded-3xl my-10">
+        <Link
+          to="home"
+          smooth={true}
+          duration={10}
+          className="flex items-center">
+          <img
+            src={Logo}
+            alt="Eco-protin Logo"
+            className="!h-13 !w- mr-2 cursor-pointer"
+          />
+        </Link>
         <Flex
           direction={{ base: "column", md: "row" }}
           justify="space-between"
@@ -106,7 +116,9 @@ const Footer = () => {
             ))}
           </Flex>
         </Flex>
-        <Text className="text-center text-sm text-gray-600">Website Design: <strong>LbH</strong></Text>
+        <Text className="text-center text-sm text-gray-600 !mt-10">
+          Website Design: <strong>LbH</strong>
+        </Text>
       </footer>
     </Container>
   );
