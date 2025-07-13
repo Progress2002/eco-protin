@@ -72,7 +72,7 @@ const Footer = () => {
 
           <Box>
             <Text as="h3" color="#0E6A10" fontWeight="semibold" mb={3}>
-              Products
+              Legal
             </Text>
             <ul className="text-xs space-y-4 font-medium text-gray-700">
               <li>Privacy Policy</li>
@@ -82,7 +82,7 @@ const Footer = () => {
 
           <Box>
             <Text as="h3" color="#0E6A10" fontWeight="semibold" mb={3}>
-              Products
+              Connect
             </Text>
             <ul className="text-xs space-y-4 font-medium text-gray-700">
               <li>info@ecoprotin.com</li>
@@ -116,7 +116,7 @@ const Footer = () => {
             ))}
           </Flex>
         </Flex>
-        <Text className="text-center text-sm text-gray-600 !mt-10">
+        <Text className="text-center text-xs text-gray-600 !mt-10">
           Website Design: <strong>LbH</strong>
         </Text>
       </footer>
