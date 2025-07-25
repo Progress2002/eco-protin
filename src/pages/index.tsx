@@ -349,7 +349,7 @@ const HomePage = () => {
               </Box>
             </Flex>
             <Divider className="!my-10" />
-            <Box>
+            {/* <Box>
               <Text
                 as="h3"
                 className="!text-xl !font-semibold text-[#616060] !mb-5">
@@ -396,7 +396,7 @@ const HomePage = () => {
                 a more resilient food system across Ghana and West Africa.
               </Text>
             </Box>
-            <Divider className="!my-10" />
+            <Divider className="!my-10" /> */}
             <Flex
               direction={{ base: "column-reverse", md: "row" }}
               gap={10}
