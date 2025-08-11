@@ -79,16 +79,16 @@ const HomePage = () => {
               justify="space-between"
               gap={5}>
               <Box>
-                <Text maxW="xl" className=" md:text-sm text-gray-200 !mb-5">
-                  At Eco Protin Feed, our mission is to redefine animal
-                  nutrition through climate-smart innovation. We create
-                  affordable, and sustainable insect-based feed that empowers
-                  farmers, reduces production costs, and promotes circular,
-                  environmentally responsible agriculture.
+                <Text maxW="xl" className=" md:text-base text-gray-200 !mb-5">
+                  At Eco Protin Ltd, our mission is to redefine animal nutrition
+                  through climate-smart innovation. We create affordable, and
+                  sustainable insect-based feed that empowers farmers, reduces
+                  production costs, and promotes circular, environmentally
+                  responsible agriculture.
                 </Text>
-                <Text maxW="xl" className="md:text-sm text-gray-200">
+                <Text maxW="xl" className="md:text-lg text-gray-200">
                   FEED stands for:
-                  <ul className="list-disc !pl-5 !text-sm">
+                  <ul className="list-disc !pl-5 !text-base">
                     <li>Fostering sustainable animal nutrition</li>
                     <li>Empowering farmers with affordable solutions</li>
                     <li>Enhancing food security through innovation</li>
@@ -134,14 +134,14 @@ const HomePage = () => {
             ability to compete with imports. Simultaneously, 5000 tons of
             organic waste are generated daily,ending up in landfills, which
             makes them an environmental nuisance, which also leads to an
-            increase in carbon emeissions and breeds pests and diseases.
+            increase in carbon emissions and breeds pests and diseases.
           </Text>
           <br />
           <Text className="text-lg text-[#616060]">
-            At Eco Protin Ltd we close this gap by employing a circular economy
+            At Eco Protin Ltd, we close this gap by employing a circular economy
             model which harnesses organic waste, insect technology(bsf) and IoT
             into high-impact,affordable circular feed products targeted at
-            poultry, aqaculture , and pig farmers .Our organic fertilzer,
+            poultry, aquaculture , and pig farmers .Our organic fertilizer,
             obtained as a by-product of our production process regenerates soil,
             promote organic farming and helps reduce pesticide usage. Our key
             differentiator is the ability to provide a superior product at a
