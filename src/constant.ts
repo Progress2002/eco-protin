@@ -1,7 +1,7 @@
 import ENTOPACImg from "./assets/images/ENTOPAC-img.jpg";
 import ENTOImg from "./assets/images/ENTO+-img.jpg";
 import FISHFEEDImg from "./assets/images/FISH-FEED-img.jpg";
-import GROWERFEEDImg from "./assets/images/Grower-Feed-img.jpg";
+import GROWERFEEDImg from "./assets/images/Grower-Feed-img.png";
 import BigFisgImg from "./assets/images/Big-fish-img.webp";
 import PoultryFarmImg from "./assets/images/Poultry-farm.webp";
 import ChikenImg from "./assets/images/Chiken.png";
@@ -53,9 +53,7 @@ export const PRODUCTS: CardProps[] = [
   },
   {
     title: "FISH FEED",
-    description: `Our high-performance black soldier fly (BSF)-based fish feed is scientifically formulated to support the full growth cycle of catfish and tilapia, from hatchling to harvest. Packed with sustainable, digestible protein and essential nutrients, our feed
-
-      delivers optimal results in growth, feed conversion, and fish health. Starter Feed Designed for fingerlings and juvenile fish, our Starter Feed provides the high protein and micronutrient density essential for early development, immunity building, and survival rates. It promotes strong skeletal formation and prepares your fish for robust growth`,
+    description: `Our high-performance black soldier fly (BSF)-based fish feed is scientifically formulated to support the full growth cycle of catfish and tilapia, from hatchling to harvest. Packed with sustainable, digestible protein and essential nutrients, our feed delivers optimal results in growth, feed conversion, and fish health. Starter Feed Designed for fingerlings and juvenile fish, our Starter Feed provides the high protein and micronutrient density essential for early development, immunity building, and survival rates. It promotes strong skeletal formation and prepares your fish for robust growth`,
     imageUrl: FISHFEEDImg,
   },
   {

@@ -86,7 +86,7 @@ const Footer = () => {
             </Text>
             <ul className="text-xs space-y-4 font-medium text-gray-700">
               <li>info@ecoprotin.com</li>
-              <li>+233 55063 4444+</li>
+              <li>+233 55 063 4444</li>
               <li>Accra, Ghana</li>
             </ul>
           </Box>

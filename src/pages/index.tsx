@@ -138,11 +138,11 @@ const HomePage = () => {
           </Text>
           <br />
           <Text className="text-lg text-[#616060]">
-            At Eco Protin Ltd we close this gap by employing a circular econpmy
+            At Eco Protin Ltd we close this gap by employing a circular economy
             model which harnesses organic waste, insect technology(bsf) and IoT
             into high-impact,affordable circular feed products targeted at
             poultry, aqaculture , and pig farmers .Our organic fertilzer,
-            obtained as a by-product of our production process regenerate soil,
+            obtained as a by-product of our production process regenerates soil,
             promote organic farming and helps reduce pesticide usage. Our key
             differentiator is the ability to provide a superior product at a
             lesser cost which enables a fair price to the farmer and consumer,
